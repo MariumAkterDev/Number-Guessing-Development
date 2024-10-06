@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number-Guessing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- =========== card part start=============== -->
+    <div class="mainCard">
+        <div class="card">
+            <div class="childCard">
+                <h1 class="welcome">
+                    Welcome to <span>Guess the Number</span> !
+                </h1>
+                <p>
+                    Player 1 will secretly choose a number between 0 and 10. Player 2 guesses first. If wrong, Player 3
+                    guesses. If neither player guesses correctly within three attempts, Player 1 wins. Let's see who has
+                    the
+                    sharpest mind and can crack the code!
+                </p>
+            </div>
+            <!-- ================= card button ================= -->
+            <button class="cardButton">
+                    Play <i class="fa-duotone fa-solid fa-play"></i>
+            </button>
+            <!-- ***************************************************** -->
+        </div>
+    </div>
+<!-- *********** card part ends ****************8 -->
+
+    <div class="mainDiv">
+        <div class="gameTitle">
+            <h1>Guess the Number <span>🤓</span></h1>
+        </div>
+
+        <h2 class="playerName">Player -☝️-🏌️</h2>
+
+        <p class="error"></p>
+
+        <p class="inputNumber">Player 1 input code: <span class="inputNumber1"></span></p>
+
+        <!-- ============ Player 1 starts ============== -->
+        <div class="main playerOne">
+            <input onkeydown="playerOneEnter(event)" class="inputPlayerOne" type="number"
+                placeholder="Enter Player One 👈">
+            <button onclick="playerOneFun()" class="playerOneButton">Guesss</button>
+        </div>
+
+        <!-- ============ Player 023 (1st player er pore j card ashbe) starts ============== -->
+        <div class="main player023">
+            <h6 class="Player023Heading">Turn : Player - 2</h6>
+            <button onclick="playerTwoFun()" class="playerTwoButton player023Button">Ok</button>
+        </div>
+
+        <!-- ============ Player 2 starts ============== -->
+        <div class="main playerTwo">
+            <div class="chanceNumber">Chance left <span class="chanceCount"> </span>/3</div>
+            <input onkeydown="playerTwoEnter(event)" class="inputPlayerTwo" type="number"
+                placeholder="Enter Player Two 👈">
+            <button onclick="playerTwoFun()" class="playerTwoButton">G0</button>
+        </div>
+
+        <!-- ============ Player 0230 (2nd player er pore j card ashbe) starts ============== -->
+        <div class="main player0230">
+            <h6 class="Player023Heading">Turn : Player - 3</h6>
+            <button onclick="playerTwoFun()" class="playerTwoButton player0230Button">Ok</button>
+        </div>
+
+        <!-- ============ Player 3 starts ============== -->
+        <div class="main playerThree">
+            <div class="chanceNumber3">Chance left <span class="chanceCount3"> </span>/3</div>
+            <input onkeydown="playerThreeEnter(event)" class="inputPlayerThree" type="number"
+                placeholder="Enter Player Three 👈">
+            <button onclick="playerThreeFun()" class="playerThreeButton">Run</button>
+        </div>
+
+        <!-- =========== common text ================= -->
+        <marquee class="commonText" scrollamount="12" direction="left" behavior="scroll">
+            Enter a number between 0️⃣ ➡️ 🔟
+        </marquee>
+
+        <!-- ================== winning part ================= -->
+        <div class="winner">"
+            <img src="https://media0.giphy.com/media/XE8iJs1sT7xTM5lafa/giphy.webp?cid=790b7611cq8nfcm15qklbncdg7s26ws74fva9ck6dvk1fdod&ep=v1_gifs_search&rid=giphy.webp&ct=g"
+                alt="gif">
+            <h2 class="result"></h2>
+        </div>
+
+        <!-- ****************************************************************** -->
+
+    </div>
+<!-- ======================= JS link ======================== -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
