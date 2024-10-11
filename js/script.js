@@ -228,7 +228,7 @@ let playerThreeFun = () => {
                     winner.style            = "display:block"
                     result.innerHTML        = "Player 1 Winner"
                     error.innerHTML         = "Congratulations 🎉🎊"
-                    error.style             = "color:#E4B1F0; top:120px"
+                    error.style             = "color:#E4B1F0; left:22px"
                     // error.innerHTML      = "Player 1 Given Value was: ", inputPlayerOne.value ??? How can I do this ????
                     inputNumber.style       = "display:block"
                     inputNumber1.innerHTML  = inputPlayerOne.value
